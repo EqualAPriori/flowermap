@@ -20,7 +20,7 @@ df = df_reordered
 
 # ===== Displa
 st.markdown("# April 2023 flower sightings")
-st.write("#### Data courtesy of citizen observations on `inaturalist.org`!")
+st.write("#### Data courtesy of citizen naturalist observations on `inaturalist.org`.")
 st.write("https://www.inaturalist.org/projects/best-wildflower-bloom-areas-of-california")
 
 #st.map(df)
@@ -44,6 +44,7 @@ st.plotly_chart(fig, use_container_width=True)
 # Histogram
 st.markdown("# Most common flower sightings")
 st.markdown("#### The top flowers reported below only make up ~16\% of reported flower sightings!")
+st.markdown("(there were a few thousand unique species in the data set)")
 fig = px.bar(df.new_name.value_counts())
 fig.update_layout(showlegend=False)
 st.plotly_chart(fig, use_container_width=True)
