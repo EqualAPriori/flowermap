@@ -45,5 +45,6 @@ st.plotly_chart(fig, use_container_width=True)
 st.markdown("# Most common flower sightings")
 st.markdown("#### The top flowers reported below only make up ~16\% of reported flower sightings!")
 fig = px.bar(df.new_name.value_counts())
+fig.update_layout(showlegend=False)
 st.plotly_chart(fig, use_container_width=True)
 
