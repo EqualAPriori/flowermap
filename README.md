@@ -2,3 +2,5 @@
 Reporting April flower sightings from this iNaturalist project: 
 https://www.inaturalist.org/projects/best-wildflower-bloom-areas-of-california
 
+Created with:
+- streamlit, plotly
